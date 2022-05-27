@@ -14,7 +14,7 @@ exports.addProject = async(req,res)=>{
    }
 };
 
-//@desc get a list of all project
+//@desc get a list of all projects
 //@params Get /api/project/
 //@access PUBLIC
 exports.getProject = async(req,res)=>{

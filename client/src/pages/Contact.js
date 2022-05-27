@@ -1,7 +1,10 @@
 import React,{ useRef,useState} from 'react'
 import emailjs from '@emailjs/browser';
 import './Contact.css'
-// import { IconName } from "react-icons/bs";
+
+import { MdEmail, MdPhone } from "react-icons/md";
+import {FaAddressCard} from "react-icons/fa";
+
 export const Contact = () => {
   const [result, setResult] = useState(false)
   const form = useRef();
@@ -40,27 +43,31 @@ export const Contact = () => {
     
           
       <h2>CONTACTER NOUS</h2>
+      <br></br>
     </div>
     <div className="Containerr">
       <div className="ContactInfo">
           <div className="box">
-             <div className="icon"></div>
+             
              <div className="text">
-             <h3>Address</h3>
+             {/* <div className="icon"><img src={address} alt='address' className='address'/></div> */}
+              <h3><FaAddressCard size= "1em" color="black"/>Address</h3>
              <p>Rue 1er Juin Kalaa Kebira, <br></br> Sousse-Tunisie <br></br>4060 </p>
              </div>
           </div>
              <div className="box">
-             <div className="icon"></div>
+             
              <div className="text">
-             <h3>Phone</h3>
+               {/* <div className="icon"><img src={phone} alt='phone' className='phone'/></div> */}
+             <h3><MdPhone size= "1em" color="black"/>Phone</h3>
              <p>+216 94 786 207 </p>
              </div>
           </div>
           <div className="box">
-             <div className="icon"></div>
+            
              <div className="text">
-             <h3>Email</h3>
+                {/* <div className="icon"><img src={email} alt='email' className='emaill'/></div> */}
+             <h3><MdEmail size= "1em" color="black"/>Email</h3>
              <p>atelier.med.concept@gmail.com </p>
              </div>
           </div>
@@ -69,11 +76,11 @@ export const Contact = () => {
           <form ref={form} onSubmit={sendEmail}>
           <h2>Envoyer un message</h2>
           <div className='inputBox'>
-               <input type="text" name="" required/> 
+               <input type="text" name="user_name" required/> 
                <span>Nom et Prénom</span> 
           </div>  
           <div className='inputBox'>
-               <input type="email" name="" required/> 
+               <input type="email" name="user_email" required/> 
                <span>Email</span> 
           </div> 
           <div className='inputBox'>

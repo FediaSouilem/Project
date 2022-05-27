@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+    
+  }
+  
+
+  .contactFormdevis{
+    width: 200%;
+    height: 500px;
+    padding: 40px;
+    background: #fff;
+     margin-left: -100px;
+    margin-top: 20px;
+  }
+  .contactFormdevis .inputBoxdevis{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contactFormdevis .inputBoxdevis input,
+  .contactFormdevis .inputBoxdevis textarea
+  {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none;
+  }
+  .contactFormdevis .inputBoxdevis span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  .contactFormdevis .inputBoxdevis input:focus ~ span,
+  .contactFormdevis .inputBoxdevis input:valid ~ span,
+  .contactFormdevis .inputBoxdevis textarea:focus ~ span,
+  .contactFormdevis .inputBoxdevis textarea:valid ~ span{
+    color: darkgoldenrod;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  .contactFormdevis .inputBoxdevis input[type="submit"] {
+    width: 100px;
+    background: darkgoldenrod;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+  }
+  @media (max-widht:991px){
+    .contact{
+      padding: 50px;
+    }
+      .containerrdevis{
+       flex-direction: column;
+      }
+      .containerrdevis .contactInfodevis{
+        margin-bottom: 40px;
+      }
+      .containerrdevis .contactInfodevis,
+      .contactFormdevis
+      {
+        width: 40px;
+      }
+    
+  }
+  .phone{
+    width: 50px;
+    margin-left: -70px; 
+  }
+  .address{
+    width: 50px;
+    margin-left: -70px;
+  }
+  .emaill{
+    width: 50px;
+    margin-left: -70px;
+  }
+  /* .icon{
+    padding-bottom: 10px;
+  } */

@@ -7,7 +7,7 @@ const initState = {
 const projectReducer = (state = initState, {type, payload}) =>{
     switch (type) {
         case  GET_PROJECT_LOADING: 
-            return {...state, loading: true}
+            return {...state, loading:true}
         case GET_PROJECT_SUCCESS: 
             return {...state, projectList: payload, loading: false, errors: false};
         case GET_PROJECT_FAILED:  

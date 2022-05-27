@@ -29,9 +29,13 @@ exports.register = async(req, res) => {
 exports.login = async (req, res) => {
     try {
         const { email,password }= req.body;
+        console.log(password)
         const existUser = await Person.findOne({email});
+        console.log(existUser)
+
         if (!existUser) return res.status(400).json({msg:'You should register first.'})
         const checkPw = await bcrypt.compare(password, existUser.password);
+        console.log(checkPw)
         if (!checkPw) return res.status(400).json({msg:'Wrong password, try again.'})
         const token = jwt.sign({id:existUser._id}, process.env.JWT_SECRET, {
             expiresIn:'7d',

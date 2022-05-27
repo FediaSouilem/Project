@@ -9,8 +9,9 @@ app.use(cors ('http://localhost:5000'));
 
 //Routes
 app.use('/api/person', require('./routes/personRoutes'));
-app.use('/api/product', require('./routes/projectRoutes'));
-
+app.use('/api/project', require('./routes/projectRoutes'));
+const path = require('path')
+app.use('/upload',express.static(path.join(__dirname,'../','public')))
 //connection to database
 const  connectDB = require ('./config/connectDB');
 connectDB();

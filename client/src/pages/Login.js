@@ -5,6 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import {login as loginAction} from '../actions/userActions'
 import { useEffect } from 'react';
 import './Login.css'
+import profilee from "./image/a.jpg"
+import email from "./image/email.png"
+import pass from "./image/password.png"
 
 const Login = () => {
     const dispatch = useDispatch();
@@ -19,40 +22,53 @@ const Login = () => {
     };
     
   return (
-    <div className="container">
-	<div className="screen">
-		<div className="screen__content">
-			<form className="login" onSubmit={handleSubmit(loginUser)} >
-				<div className="login__field">
-					<i className="login__icon fas fa-user"></i>
-					<input required type='email' {...register('email')} placeholder="Email"/>
-				</div>
-				<div className="login__field">
-					<i className="login__icon fas fa-lock"></i>
-					<input required type='password' {...register('password')} placeholder="Mot de passe"/>
-				</div>
-				<button className="button login__submit">
-					<span className="button__text">Connexion</span>
-					<i className="button__icon fas fa-chevron-right"></i>
-				</button>	
-        {errors && <p>{errors} </p>}			
-			</form>
-			<div className="social-login">
-        <br/>
+    <div className="main">
+	<div className="sub-main">
+		<div>
+			<div className='imgs'>
+				<div className='container-image'> 
+				<img src={profilee} alt='profile' className='profile'/>
+			{/* <form className="login" onSubmit={handleSubmit(loginUser)} >
 				
-				<div className="social-icons">
-					<a href="#" className="social-login__icon fab fa-instagram"></a>
-					<a href="#" className="social-login__icon fab fa-facebook"></a>
-					<a href="#" className="social-login__icon fab fa-twitter"></a>
-				</div>
-			</div>
+				<label>Email</label>
+					<input required type='email' {...register('email')} placeholder="Email"/>
+				
+				
+					<label>Mot de passe</label>
+					<input required type='password' {...register('password')} placeholder="Mot de passe"/>
+				
+				{errors && <p>{errors} </p>}
+				<button className="button login__submit">Connexion</button>	
+        			
+			</form> */}
 		</div>
-		<div className="screen__background">
-			<span className="screen__background__shape screen__background__shape4"></span>
-			<span className="screen__background__shape screen__background__shape3"></span>		
-			<span className="screen__background__shape screen__background__shape2"></span>
-			<span className="screen__background__shape screen__background__shape1"></span>
-		</div>		
+		</div>
+		<form className="login" onSubmit={handleSubmit(loginUser)} >
+		<div >
+			<h4>Page de connexion</h4>
+			<br></br>
+			<div>
+			<img src={email} alt='email' className='email'/>
+			<input required type='email' {...register('email')} placeholder="Email" className='user'/>
+		</div>
+		<div className='second-input'>
+		<img src={pass} alt='pass' className='email'/>
+		<input required type='password' {...register('password')} placeholder="Mot de passe"className='user'/>
+		</div>
+		<div className='login-button'> 
+		{errors && <p>{errors} </p>}
+		
+		<button className='button-connexion'>Connexion</button>	
+		</div>
+		 <br></br>
+			<p className='link'>
+				<a href="#"> Mot de passe oublié?</a> Ou <a>Enregistrer</a>
+			</p>
+		
+		</div>
+		</form>
+		</div>
+		
 	</div>
 </div>
   )

@@ -48,28 +48,33 @@ const Register = () => {
      
     <div className="accounttype">
       <input type="radio" value="None" id="radioOne" name="account" checked/>
-      <label for="radioOne" className="radio" chec>Personal</label>
+      <label for="radioOne" className="radio" chec>Personel</label>
       <input type="radio" value="None" id="radioTwo" name="account" />
       <label for="radioTwo" className="radio">Company</label>
     </div>
   
-  <label id="icon" for="name"><i className="icon-envelope "></i></label>
-  <input type='email' {...register('email')} name="email" id="email" placeholder="Email" required/>
-  <label id="icon" for="name"><i className="icon-user"></i></label>
-  <input type='text' {...register('name')} name="name" id="name" placeholder="Name" required/>
-  <label id="icon" for="name"><i className="icon-shield"></i></label>
-  <input type='password' {...register('password')} name="password" id="password" placeholder="Password" required/>
-  <label id="icon" for="name"><i className="icon-shield"></i></label>
-  <input type='text' {...register('adress')} name="adress" id="adress" placeholder="adress" required/>
-  <br></br>
+  <div className='input-space'>
+  <input type='email' {...register('email')} name="email" id="email" placeholder="Email" required className='input-register'/>
+  </div>
+  <div className='input-space'>
+  <input type='text' {...register('name')} name="name" id="name" placeholder="Nom et Prénom" required className='input-register'/>
+  </div>
+  <div className='input-space'>
+  <input type='password' {...register('password')} name="password" id="password" placeholder="Password" required className='input-register'/>
+  </div>
+  <div className='input-space'>
+  <input type='text' {...register('adress')} name="adress" id="adress" placeholder="addresse" required className='input-register'/>
+  </div><br></br> 
   <div className="gender">
     <input type="radio" value="None" id="male" name="gender" checked/>
     <label for="male" className="radio" chec>Male</label>
     <input type="radio" value="None" id="female" name="gender" />
-    <label for="female" className="radio">Female</label>
+    <label for="female" className="radio">Femelle</label>
    </div> 
+   <div className='register'> 
    <p>By clicking Register, you agree on our <a>terms and condition</a></p>
-   <button className="button">Register</button>
+   </div>
+   <button className="button-register">Enregistrer</button>
    
   </form>
 </div>

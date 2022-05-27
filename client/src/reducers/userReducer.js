@@ -20,7 +20,7 @@ const userReducer = (state = initState, {type, payload}) =>{
             case LOGIN_SUCCESS :  
             localStorage.setItem('token', payload.token);
             localStorage.setItem('isAuth',true);
-            localStorage.setItem('userInfo', JSON.stringify (payload.existUser));
+            localStorage.setItem('userInfo', JSON.stringify(payload.existUser));
             return {...state, 
                 userInfo: payload.existUser, 
                 token: payload.token, 

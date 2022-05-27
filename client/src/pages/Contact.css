@@ -48,21 +48,23 @@
   
 }
 .containerr .ContactInfo .box {
-  position: relative;
-  padding: 20px 0;
-  display: flex;
+  /* position: relative;
+  padding: 10px 0;
  
+ 
+  display: flex; */
+ align-items: center;
 }
-.containerr .contactInfo .box .icon {
+/* .containerr .contactInfo .box .icon {
   max-width: 60px;
-  height: 60px;
+  height: 60px; 
   background: #fff;
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   font-size: 22px;
-}
+} */
 .containerr .contactInfo .box .text {
   display: flex;
   margin-left: 20px;
@@ -70,6 +72,7 @@
   flex-direction: column;
   font-size: 16px;
   font-weight: 300;
+ 
 }
 .containerr .contactInfo .box .text h3{
   font-weight: 500;
@@ -80,7 +83,7 @@
   padding: 40px;
   background: #fff;
   margin-left: 530px;
-  margin-top: -330px;
+  margin-top: -380px;
 }
 .contactForm .inputBox{
   position: relative;
@@ -142,3 +145,20 @@
     }
   
 }
+.phone{
+  width: 50px;
+  margin-left: -70px;
+ /* margin-top: 50px;  */
+ 
+}
+.address{
+  width: 50px;
+  margin-left: -70px;
+}
+.emaill{
+  width: 50px;
+  margin-left: -70px;
+}
+/* .icon{
+  padding-bottom: 10px;
+} */

@@ -16,21 +16,21 @@ const Navbar = () => {
   return (
     <div className='Navbar'>
       <span className='nav-logo'>Atelier Med Concept</span>
-    <div className={'nav-items ${isOpen && "open"}'}>
+    <div className={`nav-items ${isOpen && 'open'}`}>
         <Link to= '/'>Home</Link> 
         {isAuth ? (
           <> 
           <Link to= '/profile'>{userInfo.name}</Link>
-          <button onClick={logout}>Logout</button>
+          <button className="button-logout" onClick={logout}>Logout</button>
           </>
         ) : (
           <> 
-          <Link to= '/login'>Login</Link>| <Link to= '/register'>Register</Link> | <Link to= '/contact'>Contact</Link>
+          <Link to= '/login'>Login</Link>| <Link to= '/register'>Register</Link> | <Link to= '/contact'>Contact</Link>| <Link to= '/Demanderundevis'>Demander un devis</Link>
           </>
 
         )}
     </div>
-    <div className={'nav-toggle ${isOpen && "open"}'}
+    <div className={`nav-toggle ${isOpen && "open"}`}
      onClick={() => setIsOpen(isOpen)}>
       <div className='bar'></div>
 

@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  font-family: system-ui , sans-serif;
+  margin: 0;
+  padding:0;
+  outline:none;
+}
+.container-modal{
+position:relative;
+padding-top: 100px;
+
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.ajouter-button{
+    padding: 10px 20px;
+    font-size: 1.2rm;
+    font-weight: bold;
+    margin-top: 0;
+    background-color: transparent;
+    color: darkgoldenrod;
+    border: 1px solid transparent;
+
+}
+.ajouter{
+    padding: 10px 20px;
+    font-size: 1.2rm;
+    font-weight: bold;
+    margin-top: 0;
+    background-color: darkgoldenrod;
+    color: white;
+    border: 1px solid transparent;
+    transition: border-color .3s;
+
+}
+.ajouter:hover{
+    border-color: #f5e173;
+    background-color: #f5e173;
+}
+.body{
+    justify-content: center;
+    align-items: center;
+   
+
+}
+#formContainer{
+    width:800px;
+    height: 200px; 
+    padding: 20px;
+    background-color: rgb(0, 0, 0 /35%);
+    margin-left: 20px;
+    flex: 0 0 100%;
+  
+    
+}
+.form-controle{
+    width: 40%;
+    border: none;
+    border-bottom: 1px solid rgb(185, 136, 0 );
+    background: none;
+    outline: none;
+    padding: 10px 5px; 
+    margin-bottom: 20px ;
+    color: darkgoldenrod;
+    
+}

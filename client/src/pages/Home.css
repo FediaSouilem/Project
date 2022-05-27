@@ -1,0 +1,108 @@
+
+body{
+    font-family:poppins;
+}
+.d-block w-100{
+height: 100vh;
+
+}
+.carousel{
+    padding-bottom: 80px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.titreatelier{
+    font-weight: bold;
+    font-size: 100px;
+    color: black;
+}
+h3{
+    font-weight: bold;
+    color: black;
+}
+h3 span{
+    color:#edbb00
+}
+.paragraphe{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 2em;
+    letter-spacing: 0px;
+    width: 1200px;
+    padding-left: 200px;
+    margin: 19px 50px 100px 0px;
+    border-radius: 0px 0px 0px 0px;
+    text-align: center;
+}
+.contacthome{
+    background-color: #edbb00;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff ;
+    text-transform: uppercase;
+    border-radius: 25px;
+    text-decoration: #fff;
+}
+.function-atelier{
+    display: grid;
+  grid-template-columns: auto auto ;
+  
+  padding: 20px;
+}
+.function{
+    font-family: "Oswald", Sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: 1.2px;
+ padding: 40px;
+
+  text-align: center;
+}
+.function-paragraphe{
+    font-size: 15px;
+    font-family: "Oswald", Sans-serif;
+}
+.tatsu-r1W-UR_K4 .tatsu-icon{color: rgba(153,153,153,1) ;}
+.tatsu-r1W-UR_K4 .tatsu-icon:hover{color: rgba(0,0,0,1) ;}
+.tatsu-r1W-UR_K4.tatsu-normal-icon{margin: 0px 0px 20px 0px;}
+
+.tatsu-SyAbBROKE .tatsu-icon{color: rgba(153,153,153,1) ;}
+.tatsu-SyAbBROKE .tatsu-icon:hover{color: rgba(0,0,0,1) ;}
+.tatsu-SyAbBROKE.tatsu-normal-icon{margin: 0px 0px 20px 0px;}
+
+.tatsu-ByjkUAOKV .tatsu-an{font-size: 50px;color: rgba(128,128,128,1) ;}
+.tatsu-ByjkUAOKV .tatsu-an-caption{font-size: 15px;color: rgba(128,128,128,1) ;}
+
+.tatsu-S1cqEROtE .sep-icon.oshine_diamond{background: #d80808;}
+.tatsu-S1cqEROtE .sep-with-icon{height: 1px;width: 20px;background: #efefef;}
+.tatsu-row > .tatsu-ryvf40OtE.tatsu-column{width: 100%;}
+.tatsu-ryvf40OtE > .tatsu-column-inner > .tatsu-top-divider{z-index: 9999;}.tatsu-ryvf40OtE > .tatsu-column-inner > .tatsu-bottom-divider{z-index: 9999;}.tatsu-ryvf40OtE > .tatsu-column-inner > .tatsu-left-divider{z-index: 9999;}
+.tatsu-ryvf40OtE > .tatsu-column-inner > .tatsu-right-divider{z-index: 9999;}.tatsu-ryvf40OtE.tatsu-column{z-index: 2;}@media only screen and (max-width:1377px) {.tatsu-row > .tatsu-ryvf40OtE.tatsu-column{width: 100%;}}
+@media only screen and (min-width:768px) and (max-width: 1024px) {.tatsu-row > .tatsu-ryvf40OtE.tatsu-column{width: 100%;}}
+@media only screen and (max-width: 767px) {.tatsu-row > .tatsu-ryvf40OtE.tatsu-column{width: 100%;}}
+
+.tatsu-r1W-UR_K4 .tatsu-icon{color: rgba(153,153,153,1) ;}
+  .tatsu-r1W-UR_K4 .tatsu-icon:hover{color: rgba(0,0,0,1) ;}
+  .tatsu-r1W-UR_K4.tatsu-normal-icon{margin: 0px 0px 20px 0px;}
+
+  .tatsu-BkyvLAuK4 .tatsu-an{font-size: 50px;color: rgba(128,128,128,1) ;}
+  .tatsu-BkyvLAuK4 .tatsu-an-caption{font-size: 15px;color: rgba(128,128,128,1) ;}
+
+  .tatsu-row > .tatsu-SyZ5JrAdt4.tatsu-column{width: 25%;}.tatsu-SyZ5JrAdt4 > 
+        .tatsu-column-inner > .tatsu-top-divider{z-index: 9999;}
+        .tatsu-SyZ5JrAdt4 > .tatsu-column-inner >
+         .tatsu-bottom-divider{z-index: 9999;}
+         .tatsu-SyZ5JrAdt4 > .tatsu-column-inner > .tatsu-left-divider{z-index: 9999;}
+         .tatsu-SyZ5JrAdt4 > .tatsu-column-inner > .tatsu-right-divider{z-index: 9999;}
+         .tatsu-SyZ5JrAdt4.tatsu-column{z-index: 2;}
+         @media only screen and (max-width:1377px) {.tatsu-row > .tatsu-SyZ5JrAdt4.tatsu-column{width: 25%;}}
+         @media only screen and (min-width:768px) and (max-width: 1024px) 
+         {.tatsu-row > .tatsu-SyZ5JrAdt4.tatsu-column{width: 25%;}}
+         @media only screen and (max-width: 767px) 
+         {.tatsu-row > .tatsu-SyZ5JrAdt4.tatsu-column{width: 100%;}}
+
+
+

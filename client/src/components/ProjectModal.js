@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { useDispatch } from "react-redux";
-import { addProjects } from "../actions/projectActions";
+import { useDispatch, } from "react-redux";
+import { addProject } from "../actions/projectActions";
+import './ProjectModal.css'
 
 function ProjectModal() {
   const dispatch = useDispatch();
@@ -14,29 +15,33 @@ function ProjectModal() {
     const handleShow = () => setShow(true);
 
     const addNewProject = (data) =>{
-     dispatch(addProjects({...data,file}));
+     dispatch(addProject({...data,file}));
      reset();
      handleClose();
    
   };
   
+  
     return (
-      <>
-        <Button variant="primary" onClick={handleShow}>
+      <> 
+      < div className="container-modal">
+        <Button className='ajouter-button' variant="primary" onClick={handleShow}>
           Ajouter un projet
         </Button>
-  
+        <div className="body"></div>
         <Modal show={show} onHide={handleClose}>
-          <form onSubmit={handleSubmit(addNewProject)}>
-            <label htmlFor="title">Titre</label>
-            <input id='title' type='text' {...register('title')} required/> <br/>
+          <form id='formContainer' onSubmit={handleSubmit(addNewProject)}>
+            <label htmlFor="Title">Titre</label>
+            <input className='form-controle' id='Title' type='text' {...register('Title')} required/> <br/>
             <label htmlFor="description">Description</label>
-            <input id='description' type='text' {...register('desc')}  required/> <br/>
+            <input className='form-controle'id='description' type='text' {...register('desc')}  required/> <br/>
             <label htmlFor="image">Image</label>
-            <input id='image' type='file' accept='image/*' onChange={(e)=>setFile(e.target.files[0])}  required/>
-            <button>Ajouter</button>
+            <input id='image' type='file'multiple accept='image/*' onChange={(e)=>setFile(e.target.files[0])}  required/>
+            <button type="submit" className='ajouter'>Ajouter</button>
           </form>
+          
         </Modal>
+      </div>
       </>
     );
   }
